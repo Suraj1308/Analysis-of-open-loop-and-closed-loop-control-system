@@ -15,10 +15,20 @@ Consider a system having plant G(S)=  1/(S^2+10S+20), H(S) = 1(negative unity fe
 C(S) and G(S) are in series, 300/(S^2+10S+20)
 300/(S^2+10S+20) and H(S) are in negative feedback.
 Therefore, Closed loop transfer function, (C(S))/(R(S))=300/(S^2+10S+320)
-## Program: 
+## Program:
 ### Open loop System
-
+		num=[1];
+		den=[1 10 20];
+		sys=tf(num,den)
+		step(sys);
 ### Closed loop System
+      num=[300]
+	den=[1 10 320]
+	sys=tf(num,den)
+	t=0:0.01:0.2
+	step(sys,t)
+
+
 
 ## Procedure:
 	Open MATLAB software
@@ -28,7 +38,11 @@ Therefore, Closed loop transfer function, (C(S))/(R(S))=300/(S^2+10S+320)
 	Analyse the result.
 ## Output:
 ### Open Loop System
+<img width="691" height="627" alt="Screenshot 2025-09-24 091749" src="https://github.com/user-attachments/assets/cc1d8fa6-4cef-4192-8f68-77428fe20ad6" />
+
 ### Closed Loop System
+<img width="1905" height="1141" alt="image" src="https://github.com/user-attachments/assets/7b3b657a-9df3-41c7-9e61-7e55cc9c989b" />
+
 ## Result:
 Thus the open loop and closed loop system are analysed and the following conclusions are arrived.
 ### Open loop system
