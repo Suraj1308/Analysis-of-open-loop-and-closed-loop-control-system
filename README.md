@@ -46,11 +46,11 @@ Therefore, Closed loop transfer function, (C(S))/(R(S))=300/(S^2+10S+320)
 ## Result:
 Thus the open loop and closed loop system are analysed and the following conclusions are arrived.
 ### Open loop system
-Steady State Error = <br>
-Settling Time = 
+Steady State Error = 0.95
+Settling Time = 2.01s
 ### Closed loop System
-Steady State Error = <br>
-Settling Time = 
+Steady State Error =0.3
+Settling Time = 0.863s
 
 
 
